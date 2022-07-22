@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <test thread-count="5" name="RegressionTest(failed)" parallel="methods">
+    <groups>
+      <run>
+        <exclude name="not_required"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Regression.Test1Test">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="SecondMethod"/>
+          <include name="endTests"/>
+          <include name="FourthMethod"/>
+        </methods>
+      </class> <!-- Regression.Test1Test -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->
